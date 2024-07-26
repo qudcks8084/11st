@@ -3,7 +3,7 @@
     <span id="MainMenuBarLogo">AL-PM Vue</span>
     <span>|</span>
     <a href="" class="menu-button study">
-      <span :style="{ color: pageNum === 1 ? 'black' : 'blue', fontWeight: pageNum === 1 ? 'normal' : 'bold' }">STUDY HOME</span>
+      <span :style="{ color: pageNum === '1' ? 'blue' : 'black', fontWeight: pageNum === '1' ? 'bold' : 'normal' }">STUDY HOME</span>
     </a>
     <span>|</span>
     <a href="" class="menu-button code"><span>CODE COMMUNITY</span></a>
@@ -18,7 +18,7 @@
 export default {
   name: 'MenuBarComponent',
   props:{
-    pageNum : Number
+    pageNum : String
   }
 };
 </script>

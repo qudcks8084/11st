@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <MenuBarComponent pageNum = 1 />
+    <MenuBarComponent pageNum = '1' />
     <StudySettingBar />
   </div>
 </template>
