@@ -1,6 +1,6 @@
 {
-  "short_name": "AL-PM",
-  "name": "AL-PM",
+  "short_name": "AL-PM_Vue",
+  "name": "AL-PM_Vue",
   "icons": [
     {
       "src": "alpm_Icon.png",
