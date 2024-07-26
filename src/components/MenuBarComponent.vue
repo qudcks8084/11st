@@ -1,20 +1,25 @@
 <template>
   <div id="MainMenubar">
-    <span id="MainMenuBarLogo">AL-PM</span>
+    <span id="MainMenuBarLogo">AL-PM Vue</span>
     <span>|</span>
-    <a href="#" class="menu-button study"><span>STUDY HOME</span></a>
+    <a href="" class="menu-button study">
+      <span :style="{ color: pageNum === 1 ? 'black' : 'blue', fontWeight: pageNum === 1 ? 'normal' : 'bold' }">STUDY HOME</span>
+    </a>
     <span>|</span>
-    <a href="#" class="menu-button code"><span>CODE COMMUNITY</span></a>
+    <a href="" class="menu-button code"><span>CODE COMMUNITY</span></a>
     <span>|</span>
-    <a href="#" class="menu-button codegroup"><span>CODE GROUP COMMUNITY</span></a>
+    <a href="" class="menu-button codegroup"><span>CODE GROUP COMMUNITY</span></a>
     <span>|</span>
-    <a href="#" class="menu-button mypage"><span>MY PAGE</span></a>
+    <a href="" class="menu-button mypage"><span>MY PAGE</span></a>
   </div>
 </template>
 
 <script>
 export default {
   name: 'MenuBarComponent',
+  props:{
+    pageNum : Number
+  }
 };
 </script>
 
@@ -84,5 +89,10 @@ export default {
 .menu-button.active-mypage {
   font-weight: bold;
   color: #EF4949;
+}
+
+.menu-button-study :active{
+  font-weight: bold;
+  color: blue;
 }
 </style>

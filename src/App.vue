@@ -1,16 +1,19 @@
 <template>
   <div id="app">
-    <MenuBarComponent />
+    <MenuBarComponent pageNum = 1 />
+    <StudySettingBar />
   </div>
 </template>
 
 <script>
 import MenuBarComponent from './components/MenuBarComponent.vue';
+import StudySettingBar from './components/StudySettingBar.vue';
 
 export default {
   name: 'App',
   components: {
-    MenuBarComponent
+    MenuBarComponent,
+    StudySettingBar,
   }
 };
 </script>
