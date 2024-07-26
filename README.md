@@ -1,10 +1,10 @@
 ## Soongil University 2024-1 Capstone Project
-- 초심자를 위한 쉬운 알고리즘 학습 서비스 
+- 초심자를 위한 쉬운 알고리즘 학습 서비스 Ver1 을 Vue로 일부 다시 작성하기 위한 프로젝트
 ## Front-end Web 개발 담당
 - SSU / 20192830 / Park Byeongchan / qudcks8084@naver.com
 ##  개발 환경
-- 개발 언어 : JavaScript, HTML5, CSS
-- 프레임워크 : ReactJS - Node.js 20.11.1
+- 개발 언어 : JavaScript, HTML, CSS
+- 프레임워크 : Vue - Node.js 20.15.1 / npm 10.7.0
 - IDE : Visual Studio Code
 
 ## GIT 관련 설정
