@@ -1,0 +1,28 @@
+#CodeGroupHomeSearchBar{
+    width: 85vw;
+    margin-top: 7.5vh;    
+    margin-left : 7.5vw;
+    margin-right: 7.5vw;
+    display: flex;
+    justify-content: space-around;
+    align-items:center; 
+    font-size: medium;
+}
+
+#CodeGroupSettingKeyword{
+    font-weight: bold;
+}
+
+#CodeGroupHomeSearchButton{
+    height: 15px;
+    font-family: 'SUITE-Regular';
+}
+
+#CodeGroupHomeSearchInput{
+    border: 0px;
+}
+
+#CodeGroupHome{
+    display: flex;
+    flex-direction: column;
+}

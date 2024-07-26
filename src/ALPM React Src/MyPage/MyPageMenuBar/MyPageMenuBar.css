@@ -1,0 +1,28 @@
+#MyPageMenuBar {
+    width: 60vw;
+    margin-top: 5vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    display: flex;
+    justify-content: space-around;
+    font-size: small;
+}
+
+.menu-button {
+    font-family: 'SUITE-Regular';
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.menu-button:hover {
+    color: #FF7F7F; /* 커서를 올렸을 때 연한 빨간색으로 변경 */
+}
+
+.menu-button.active {
+    font-weight: bold;
+    color: #EF4949;
+}

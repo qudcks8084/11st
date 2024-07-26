@@ -1,0 +1,32 @@
+#CodeSearchResult{
+    width: 85%-1px;  
+    padding-top:15px;
+    padding-bottom: 15px;
+    padding-left : 7.5%;
+    padding-right: 7.5%;
+    margin-top:20px;
+    margin-bottom : 30px;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1.5fr 1fr 0.5fr 2fr 1fr 0.5fr 2.5fr 0.5fr 0.5fr 2.5fr ;
+    justify-items: start;
+    gap: 20px; 
+    font-size: small;
+    border: 1px solid #ddd; /* 연한 회색 경계선 */
+    border-radius: 8px; /* 모서리를 둥글게 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 가벼운 그림자 */
+    background-color: #fff; /* 배경색을 흰색으로 */
+    transition: box-shadow 0.3s ease; /* 그림자 변화에 대한 트랜지션 */
+}
+
+#CodeSearchResult:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 마우스를 올렸을 때 더 큰 그림자 */
+}
+
+#CodeSearchBody{
+    width: 85vw;
+    margin-top : 5vh;
+    margin-bottom: 5vh;    
+    margin-left : 7.5vw;
+    margin-right: 7.5vw;
+    overflow: auto;
+}

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=SUITE:wght@400&display=swap');
+
+#CommunitySearchBar {
+    width: 85%;
+    margin-top: 7.5vh;    
+    margin-left: 7.5vw;
+    margin-right: 7.5vw;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1.3fr 0.8fr 0.8fr 1fr 0.5fr 0.7fr 1.5fr 1.5fr 1fr 0.5fr 2fr 2fr;
+    justify-items: center;
+    align-items: center;
+    font-size: medium;
+}
+
+#SearchBarSetting {
+    font-weight: bold;
+}
+
+#SearchKeywordInput {
+    font-family: 'SUITE-Regular';
+    border: 0px;
+}
+
+#DataLoadbutton {
+    width: 10vw;
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd; /* 연한 회색 경계선 */
+    border-radius: 8px; /* 모서리를 둥글게 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 가벼운 그림자 */
+    background-color: #fff; /* 배경색을 흰색으로 */
+    transition: box-shadow 0.3s ease; /* 그림자 변화에 대한 트랜지션 */
+    font-family: 'SUITE-Regular';
+}
+
+#DataLoadbutton:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 마우스를 올렸을 때 더 큰 그림자 */
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+    transition: color 0.3s ease;
+    font-family: 'SUITE-Regular';
+}
+
+.menu-button:hover[data-tag="코드 유형"] {
+    color: #FFB380; /* 코드 유형 hover 색상 */
+}
+
+.menu-button:hover[data-tag="제작자 유형"] {
+    color: #66CC99; /* 기타 hover 색상 */
+}
+
+.menu-button.active {
+    font-weight: bold;
+}
+
+.menu-button.active[data-tag="코드 유형"] {
+    color: #FF6B00;
+}
+
+.menu-button.active[data-tag="제작자 유형"] {
+    color: #009418;
+}
