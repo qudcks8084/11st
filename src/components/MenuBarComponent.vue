@@ -1,59 +1,88 @@
 <template>
-  <div class="menu">
-    <ul class="menubar">
-      <li v-for="(eachmenu, index) in menubar1" :key="index"><a href="#">{{eachmenu}}</a></li>
-      <li><span>|</span></li>
-      <li v-for="(eachmenu, index) in menubar2" :key="index"><a href="#">{{eachmenu}}</a></li>
-      <li><span>|</span></li>
-      <li><a href="#">아마존</a></li>
-    </ul>
-    <ul class="menubar">
-      <li><a href="#">로그인</a></li>
-      <span>바로가기</span>
-    </ul>
+  <div id="MainMenubar">
+    <span id="MainMenuBarLogo">AL-PM</span>
+    <span>|</span>
+    <a href="#" class="menu-button study"><span>STUDY HOME</span></a>
+    <span>|</span>
+    <a href="#" class="menu-button code"><span>CODE COMMUNITY</span></a>
+    <span>|</span>
+    <a href="#" class="menu-button codegroup"><span>CODE GROUP COMMUNITY</span></a>
+    <span>|</span>
+    <a href="#" class="menu-button mypage"><span>MY PAGE</span></a>
   </div>
 </template>
 
 <script>
 export default {
   name: 'MenuBarComponent',
-  data() {
-    return {
-      menubar1: ['베스트', '쇼킹딜', '슈팅배송', '쿠폰/기획전'],
-      menubar2: ['신선식품', '장보기', '9900원샵', '리퍼블리', 'T공식대리점'],
-    };
-  },
 };
 </script>
 
 <style scoped>
-.menu {
-  width: 1200px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  background: white;
-  border-color: gray;
-  border-radius: 5px;
-  flex-shrink: 0;
+#MainMenubar {
+  width: 70vw;
+  margin-top: 10vh;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1.65fr 0.45fr 2.05fr 0.45fr 2.8fr 0.4fr 1fr;
+  justify-items: center;
+  font-size: larger;
 }
 
-.menubar {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  padding: 0;
-  margin: 0;
+#MainMenuBarLogo  {
+  font-weight: bold;
+  font-family: 'SUITE-Regular';
 }
 
-.menubar li {
-  margin-right: 10px;
-}
-
-.menubar li a {
+.menu-button {
+  font-family: 'SUITE-Regular';
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
   color: black;
-  text-decoration: none;
-  font-weight: 600;
+  transition: color 0.3s ease;
+  text-decoration : none;
 }
 
+.menu-button:hover {
+  font-weight: bold;
+}
+
+.menu-button.study:hover {
+  color: #AFA6FF;
+}
+
+.menu-button.code:hover {
+  color: #FFB380;
+}
+
+.menu-button.codegroup:hover {
+  color: #66CC99;
+}
+
+.menu-button.mypage:hover {
+  color: #FF7F7F;
+}
+
+.menu-button.active-study {
+  font-weight: bold;
+  color: #5C4EFF;
+}
+
+.menu-button.active-code {
+  font-weight: bold;
+  color: #FF6B00;
+}
+
+.menu-button.active-codegroup {
+  font-weight: bold;
+  color: #009418;
+}
+
+.menu-button.active-mypage {
+  font-weight: bold;
+  color: #EF4949;
+}
 </style>
